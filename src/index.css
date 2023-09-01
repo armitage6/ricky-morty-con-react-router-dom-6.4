@@ -1,0 +1,228 @@
+html {
+
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1 rem = a 10 pixeles*/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-family: 'Gluten', cursive;
+  background-color: #060a27;
+}
+
+
+
+/* Globales*/
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+h2 {
+
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.contenedor2 {
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  /* Esto lo que hace es que si el div mide 300 la imagen aunque mida mas va a tomar el espacio que tiene el div*/
+  display: block;
+  /* el width cubre todo el ancho pero el falta altura por cubrir por eso usamos display: block*/
+}
+
+
+/*Utilidades*/
+.text-center {
+  text-align: center;
+}
+
+
+/*Error Page*/
+.error-page h1,
+p {
+  color: #fff;
+}
+
+.error-page p {
+  font-size: 3rem;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: #060a27;
+  padding: 2rem;
+}
+
+.ordenry {
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
+}
+
+.ordenry img {
+  width: 10rem;
+  border-radius: 2rem;
+}
+
+
+/*IMG Hero*/
+
+.hero {
+  background-image: url(./img/portada3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 20%;
+  height: 40rem;
+}
+
+
+/*Listado de Personajes*/
+
+.list-container {
+  margin-top: 6rem;
+}
+
+.nav-page {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 8rem;
+}
+
+.nav-page .link {
+  color: #fff;
+  background-color: #0a145f;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background: #060c39;
+  padding: 2rem;
+  box-shadow: 1px 2px 3px 6px rgba(69, 5, 5, 0.2);
+  color: #FFF;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card img {
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+  border: 3px solid #3d0c0c;
+}
+
+.card h3 {
+  margin: 2rem 0;
+}
+
+.agregar-favorito a {
+  display: block;
+  background-color: #FFF;
+  border-radius: 2rem;
+  text-align: center;
+
+  padding: 0.5rem;
+}
+
+.agregar-favorito a:hover {
+  background-color: #dedede;
+}
+
+
+
+
+
+
+/*Informacion de los personajes*/
+
+.contenedor-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding-top: 10rem;
+}
+
+.btn-regresar {
+  display: flex;
+  justify-content: end;
+  padding-right: 10rem;
+}
+
+.btn-regresar button {
+  background-color: #0a145f;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: #fff
+}
+
+.btn-regresar button:hover {
+  background-color: #2d3360;
+
+}
+
+.contenedor-info img {
+  height: 50rem;
+  width: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.informacion {
+  color: #fff;
+  font-size: 2rem;
+
+}
+
+.informacion span {
+  margin-left: 5rem;
+}
